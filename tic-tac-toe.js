@@ -23,7 +23,7 @@ window.onload = function(){
                 element.classList.add("O");
                 cplayer = true;
             }
-            
+
             wincon.forEach((index)=> {
                 if((divsquare[index[0]].innerHTML == playerX) && (divsquare[index[1]].innerHTML == playerX) && (divsquare[index[2]].innerHTML == playerX)){
                     statusbar.classList.add("you-won");
@@ -57,6 +57,8 @@ window.onload = function(){
         element.onmouseout = (event) =>{
             element.classList.remove("hover");
         }
-
+        newgame.addEventListener("click", (event) => {
+            location.reload();
+        })
     });
 }
