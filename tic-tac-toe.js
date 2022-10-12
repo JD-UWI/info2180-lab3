@@ -26,5 +26,14 @@ window.onload = function(){
 
         });
 
+        element.onmouseover = (event) =>{
+            element.style.transition = "all .3s ease-in-out"
+            element.classList.add("hover");
+        }
+
+        element.onmouseout = (event) =>{
+            element.classList.remove("hover");
+        }
+
     });
 }
